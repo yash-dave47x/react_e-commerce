@@ -1,0 +1,72 @@
+.card{
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 50px;
+
+    .image{
+        width: 100%;
+        height: 400px;
+        overflow: none;
+        position: relative;
+
+        &:hover{
+          .secondImg{
+            z-index: 2;
+          }
+        }
+
+        span{
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            background-color: white;
+            color: teal;
+            z-index: 3;
+            padding: 3px 5px;
+            font-weight: 500;
+            font-size: 12px;
+        }
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        
+        .mainImg{
+            z-index: 1;
+        }
+    }
+
+    h2{
+        font-weight: 400;
+        font-size: 16px;
+    }
+    .prices{
+        position: relative;
+        display: flex;
+        margin-top: 0px;
+        gap: 20px;
+    }
+    h3{
+        position: relative;
+        top: -33px;
+        left: 0;
+        font-weight: 500;
+        font-size: 18px;
+
+        &:first-child{
+            color: gray;
+            font-size: 16px;
+            text-decoration: line-through;
+            align-self: center;
+        }
+        
+     
+    }
+}
